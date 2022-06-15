@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-2xl font-bold p-4;
+}
+.router-link-active {
+  @apply text-red-500;
+}
+.router-link-exact-active {
+  @apply text-red-500 font-bold underline;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
